@@ -4,8 +4,9 @@ theme = "codex"
 # Override these settings with your own
 title = "Notisboka"
 languageCode = "no-no"
-baseURL = "https://www.olavaga.no"
+baseURL = "https/www.olavaga.github.io/"
 copyright = "© {2020}"
+publishDir = "../docs"
 
 # Add your Disqus shortname here.
 # disqusShortname = ""
