@@ -6,6 +6,7 @@ title = "Notisboka"
 languageCode = "no-no"
 baseURL = "https://olavaga.github.io/"
 copyright = "© {2020}"
+publishDir = ".."
 
 # Add your Disqus shortname here.
 # disqusShortname = ""
