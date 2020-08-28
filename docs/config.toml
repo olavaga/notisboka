@@ -65,10 +65,10 @@ publishDir = ".."
   url = "/"
 
 [[menu.main]]
-  identifier = "blogg"
-  name = "blogg"
-  title = "Blogg"
-  url = "/blogg"
+  identifier = "notater"
+  name = "notater"
+  title = "notater"
+  url = "/notater"
 
 
 
