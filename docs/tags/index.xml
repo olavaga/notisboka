@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Notisboka</title>
-    <link>www.olavaga.no/tags/</link>
+    <link>http://www.olavaga.no/tags/</link>
     <description>Recent content in Tags on Notisboka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>no-no</language>
     <copyright>© {2020}</copyright>
     <lastBuildDate>Fri, 28 Aug 2020 12:02:26 +0200</lastBuildDate>
     
-	<atom:link href="www.olavaga.no/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.olavaga.no/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>pedagogikk</title>
-      <link>www.olavaga.no/tags/pedagogikk/</link>
+      <link>http://www.olavaga.no/tags/pedagogikk/</link>
       <pubDate>Fri, 28 Aug 2020 12:02:26 +0200</pubDate>
       
-      <guid>www.olavaga.no/tags/pedagogikk/</guid>
+      <guid>http://www.olavaga.no/tags/pedagogikk/</guid>
       <description></description>
     </item>
     
