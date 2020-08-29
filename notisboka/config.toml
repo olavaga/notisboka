@@ -4,7 +4,7 @@ theme = "codex"
 # Override these settings with your own
 title = "Notisboka."
 languageCode = "no-no"
-baseURL = "www.olavaga.no/"
+baseURL = "https://www.olavaga.no/"
 copyright = "© {2020}"
 publishDir = "../docs"
 
