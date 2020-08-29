@@ -2,7 +2,7 @@
 themesDir = "../../" 
 
 # DO NOT REMOVE THIS
-theme = "hugo-theme-codex" 
+theme = "codex" 
 
 # Override these settings with your own
 title = "codex"

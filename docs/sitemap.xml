@@ -3,15 +3,32 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://olavaga.github.io/</loc>
+    <loc>https://www.olavaga.no/</loc>
+    <lastmod>2020-08-28T12:02:26+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://olavaga.github.io/categories/</loc>
+    <loc>https://www.olavaga.no/notater/</loc>
+    <lastmod>2020-08-28T12:02:26+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://olavaga.github.io/tags/</loc>
+    <loc>https://www.olavaga.no/tags/pedagogikk/</loc>
+    <lastmod>2020-08-28T12:02:26+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.olavaga.no/tags/</loc>
+    <lastmod>2020-08-28T12:02:26+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.olavaga.no/notater/aapenlaering/</loc>
+    <lastmod>2020-08-28T12:02:26+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.olavaga.no/categories/</loc>
   </url>
   
 </urlset>
