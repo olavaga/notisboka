@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pedagogikk on Notisboka</title>
-    <link>https://www.olavaga.no/tags/pedagogikk/</link>
+    <link>www.olavaga.no/tags/pedagogikk/</link>
     <description>Recent content in pedagogikk on Notisboka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>no-no</language>
     <copyright>© {2020}</copyright>
     <lastBuildDate>Fri, 28 Aug 2020 12:02:26 +0200</lastBuildDate>
     
-	<atom:link href="https://www.olavaga.no/tags/pedagogikk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="www.olavaga.no/tags/pedagogikk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Åpen læring</title>
-      <link>https://www.olavaga.no/notater/aapenlaering/</link>
+      <link>www.olavaga.no/notater/aapenlaering/</link>
       <pubDate>Fri, 28 Aug 2020 12:02:26 +0200</pubDate>
       
-      <guid>https://www.olavaga.no/notater/aapenlaering/</guid>
+      <guid>www.olavaga.no/notater/aapenlaering/</guid>
       <description>Hjemmekontorets underfundigheter Torsdag startet som mange andre dager. Frokost på kjøkkenet, etterfulgt av digital forelesning på kjøkkenet og deretter videre studier på kjøkkenet. 😷 Misforstå meg rett. Jeg liker kjøkkenet mitt. Og er heldig som har et studie å gå til. Problemet er at for å lære, hele poenget med studiene, trenger jeg å anvende det jeg lærer.
 Vanligvis ville det skjedd på én av to måter: 🏫  Jeg skriver kode som løser et problem foreleseren har gitt oss Jeg diskuterer kode med andre medstudenter  Problemet med kjøkkenet, er at det mangler medstudenter.</description>
     </item>
