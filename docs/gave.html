@@ -10,9 +10,6 @@ body {
 
 #gave {
     height: 400px;
-}
-
-#gave:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
@@ -37,7 +34,7 @@ body {
 
     <body>
 
-    <img id="gave" src="gave.png" onclick="this.src='hjelm.png'"></img>
+    <img id="gave" src="gave.png" onclick="this.src=(this.src.endsWith('gave.png')) ? 'hjelm.png' : 'gave.png'"></img>
 
 
     </body>
