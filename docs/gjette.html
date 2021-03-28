@@ -3,43 +3,94 @@
 <style>
 html,body {
     margin: 0px;
+    padding: 2rem;
     height: 100%;
     font-family: helvetica;
     background:azure;
+    text-align: center;
 }
+
+#ord {
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 30px;
+}
+
+#klokke {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+}
+
+.knapp {
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#ferdigeOrd {
+    color: darkgray;
+}
+
+.knapp:hover {
+    filter: brightness(115%);
+
+}
+
+#startKnapp {
+    background-color: darkslateblue;
+}
+
+#riktigKnapp {
+    background-color: forestgreen;
+}
+
+#forkastKnapp {
+    background-color: indianred;
+}
+            
 
 </style>
     </head>
     <body>
-        <p> Alias </p>
+        <p> Agalias </p>
         <p id="ord"></p>
-        <p id="poeng"></p>
+        <p id="poeng">0 poeng</p>
         <p id="klokke"></p>
-        <button id="startKnapp" onclick="startTur()"> Start tur</button>
-        <button id="forkastKnapp" onclick="forkast()" hidden> Forkast (-1 poeng) </button>
-        <button id="riktigKnapp" onclick="riktig()" hidden> Riktig </button>
+        <button id="startKnapp" class="knapp" onclick="startTur()"> Start tur</button>
+        <button id="forkastKnapp" class="knapp" onclick="forkast()" hidden> Forkast (-1 poeng) </button>
+        <button id="riktigKnapp" class="knapp" onclick="riktig()" hidden> Riktig </button>
+        <p id="beskjed"></p>
+        <p id="ferdigeOrd"></p>
 
         <script>
             let poeng = 0;
             let mineOrd = ["snekker", "barista", "paven", "statsminister", "facebook", "halleluja", "sean connery", "nisse", "påskehare"];
             let ordEl = document.getElementById("ord");
+            let beskjedEl = document.getElementById("beskjed");
             let startKnappEl = document.getElementById("startKnapp");
             let riktigKnappEl = document.getElementById("riktigKnapp");
             let forkastKnappEl = document.getElementById("forkastKnapp");
             let klokkeEl = document.getElementById("klokke");
             let poengEl = document.getElementById("poeng");
+            let ferdigeOrdEl = document.getElementById("ferdigeOrd");
             let intervall = null;
 
             function startTur() {
                 nyttOrd()
-                poengEl.innerHTML = "Du har " + poeng + " poeng";
+                poengEl.innerHTML = poeng + " poeng";
+                beskjedEl.innerHTML = "";
 
                 riktigKnappEl.removeAttribute("hidden");
                 forkastKnappEl.removeAttribute("hidden");
                 startKnappEl.hidden = true;
 
                 klokke = 60;
-                klokkeEl.innerHTML = klokke + " sekunder igjen av turen.";
+                klokkeEl.innerHTML = klokke + " sekunder";
 
                 intervall = setInterval(klokkeTeller, 1000);
                 setTimeout(avsluttTur, 1000 * 60);
@@ -48,14 +99,13 @@ html,body {
             
             function klokkeTeller() {
                 klokke--
-                klokkeEl.innerHTML = klokke + " sekunder igjen av turen.";
-
-
+                klokkeEl.innerHTML = klokke + " sekunder";
             }
 
             function avsluttTur() {
-                ordEl.innerHTML = "Turen er over. Du kan fortsatt forklare " + ordEl.innerHTML;
-                poengEl.innerHTML = "Du har " + poeng + " poeng";
+                ordEl.innerHTML =  ordEl.innerHTML;
+                beskjedEl.innerHTML = "Turen din er ferdig, du kan fortsatt forklare ordet over";
+                poengEl.innerHTML = poeng + " poeng";
 
                 riktigKnappEl.hidden = true;
                 forkastKnappEl.hidden = true;
@@ -65,19 +115,21 @@ html,body {
             }
 
             function nyttOrd() {
-                ordEl.innerHTML = "Du skal forklare: " + mineOrd[Math.floor(Math.random() * mineOrd.length)];
+                ordEl.innerHTML = mineOrd[Math.floor(Math.random() * mineOrd.length)];
             }
             function riktig() {
+                ferdigeOrd.innerHTML = ordEl.innerHTML + ' (r)<br>' + ferdigeOrd.innerHTML;
                 nyttOrd()
                 poeng++;
-                poengEl.innerHTML = poeng;
+                poengEl.innerHTML = poeng + " poeng";
                             
             }
 
             function forkast() {
+                ferdigeOrd.innerHTML = ordEl.innerHTML + ' (g)<br>' + ferdigeOrd.innerHTML;
                 nyttOrd()
                 poeng--;
-                poengEl.innerHTML = poeng;
+                poengEl.innerHTML = poeng + " poeng";
 
             }
 

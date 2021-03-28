@@ -70,17 +70,17 @@ publishDir = "../docs"
   title = "notater"
   url = "/notater"
 
-#[[menu.main]]
-#  identifier = "prosjekter"
-#  name = "prosjekter"
-#  title = "prosjekter"
-#  url = "/prosjekter"
-#
-#[[menu.main]]
-#  identifier = "ressurser"
-#  name = "ressurser"
-#  title = "ressurser"
-#  url = "/ressurser"
+[[menu.main]]
+  identifier = "prosjekter"
+  name = "prosjekter"
+  title = "prosjekter"
+  url = "/prosjekter"
+
+[[menu.main]]
+  identifier = "ressurser"
+  name = "ressurser"
+  title = "ressurser"
+  url = "/ressurser"
 
 
 
