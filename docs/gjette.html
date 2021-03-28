@@ -1,0 +1,89 @@
+<html>
+    <head>
+<style>
+html,body {
+    margin: 0px;
+    height: 100%;
+    font-family: helvetica;
+    background:azure;
+}
+
+</style>
+    </head>
+    <body>
+        <p> Alias </p>
+        <p id="ord"></p>
+        <p id="poeng"></p>
+        <p id="klokke"></p>
+        <button id="startKnapp" onclick="startTur()"> Start tur</button>
+        <button id="forkastKnapp" onclick="forkast()" hidden> Forkast (-1 poeng) </button>
+        <button id="riktigKnapp" onclick="riktig()" hidden> Riktig </button>
+
+        <script>
+            let poeng = 0;
+            let mineOrd = ["snekker", "barista", "paven", "statsminister", "facebook", "halleluja", "sean connery", "nisse", "påskehare"];
+            let ordEl = document.getElementById("ord");
+            let startKnappEl = document.getElementById("startKnapp");
+            let riktigKnappEl = document.getElementById("riktigKnapp");
+            let forkastKnappEl = document.getElementById("forkastKnapp");
+            let klokkeEl = document.getElementById("klokke");
+            let poengEl = document.getElementById("poeng");
+            let intervall = null;
+
+            function startTur() {
+                nyttOrd()
+                poengEl.innerHTML = "Du har " + poeng + " poeng";
+
+                riktigKnappEl.removeAttribute("hidden");
+                forkastKnappEl.removeAttribute("hidden");
+                startKnappEl.hidden = true;
+
+                klokke = 60;
+                klokkeEl.innerHTML = klokke + " sekunder igjen av turen.";
+
+                intervall = setInterval(klokkeTeller, 1000);
+                setTimeout(avsluttTur, 1000 * 60);
+
+            }
+            
+            function klokkeTeller() {
+                klokke--
+                klokkeEl.innerHTML = klokke + " sekunder igjen av turen.";
+
+
+            }
+
+            function avsluttTur() {
+                ordEl.innerHTML = "Turen er over. Du kan fortsatt forklare " + ordEl.innerHTML;
+                poengEl.innerHTML = "Du har " + poeng + " poeng";
+
+                riktigKnappEl.hidden = true;
+                forkastKnappEl.hidden = true;
+                startKnappEl.hidden = false;
+                clearInterval(intervall);
+
+            }
+
+            function nyttOrd() {
+                ordEl.innerHTML = "Du skal forklare: " + mineOrd[Math.floor(Math.random() * mineOrd.length)];
+            }
+            function riktig() {
+                nyttOrd()
+                poeng++;
+                poengEl.innerHTML = poeng;
+                            
+            }
+
+            function forkast() {
+                nyttOrd()
+                poeng--;
+                poengEl.innerHTML = poeng;
+
+            }
+
+                
+        </script>
+
+    </body>
+
+</html>
