@@ -1,6 +1,6 @@
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
 html,body {
@@ -29,7 +29,10 @@ html,body {
 .knapp {
     border: none;
     border-radius: 3px;
+    width: 100%;
+    max-width: 80vmin;
     color: white;
+    margin: 0.5rem;
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
@@ -66,14 +69,15 @@ html,body {
         <p id="poeng">0 poeng</p>
         <p id="klokke"></p>
         <button id="startKnapp" class="knapp" onclick="startTur()"> Start tur</button>
-        <button id="forkastKnapp" class="knapp" onclick="forkast()" hidden> Forkast (-1 poeng) </button>
         <button id="riktigKnapp" class="knapp" onclick="riktig()" hidden> Riktig </button>
+        <br>
+        <button id="forkastKnapp" class="knapp" onclick="forkast()" hidden> Forkast (-1 poeng) </button>
         <p id="beskjed"></p>
         <p id="ferdigeOrd"></p>
 
+        <script type="text/javascript" src="norskeord.js"></script>
         <script>
             let poeng = 0;
-            let mineOrd = ["snekker", "barista", "paven", "statsminister", "facebook", "halleluja", "sean connery", "nisse", "påskehare"];
             let ordEl = document.getElementById("ord");
             let beskjedEl = document.getElementById("beskjed");
             let startKnappEl = document.getElementById("startKnapp");
