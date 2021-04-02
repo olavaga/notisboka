@@ -3,7 +3,7 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
-html,body {
+html {
     padding: 2rem;
     font-family: helvetica;
     background:azure;
@@ -39,6 +39,26 @@ html,body {
     font-size: 3vmin;
 }
 
+.egg {
+    opacity:0.9;
+    position:fixed;
+    right:0px;
+    height: 30vmin;
+    z-index:-1;
+}
+
+#egg-1 {
+    transform:rotate(-45deg);
+    right:-5vmin;
+    bottom:3vmin;
+}
+
+#egg-2 {
+    transform:rotate(15deg);
+    right:30vmin;
+    bottom:-2vmin;
+}
+
 #ferdigeOrd {
     color: darkgray;
 }
@@ -56,8 +76,7 @@ html,body {
     background-color: forestgreen;
 }
 
-#forkastKnapp {
-    background-color: indianred;
+#forkastKnapp { background-color: indianred;
 }
             
 
@@ -75,6 +94,8 @@ html,body {
         <p id="beskjed"></p>
         <p id="ferdigeOrd"></p>
 
+        <img id="egg-1" class="egg" src="/easter-egg-1.svg" alt="Påskeegg">
+        <img id="egg-2" class="egg" src="/easter-egg-2.svg" alt="Påskeegg">
         <script type="text/javascript" src="norskeord.js"></script>
         <script>
             let poeng = 0;
