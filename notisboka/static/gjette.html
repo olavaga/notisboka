@@ -60,7 +60,7 @@ html {
 }
 
 #ferdigeOrd {
-    color: darkgray;
+    color: aqua; 
 }
 
 .knapp:hover {
@@ -90,7 +90,7 @@ html {
         <button id="startKnapp" class="knapp" onclick="startTur()"> Start tur</button>
         <button id="riktigKnapp" class="knapp" onclick="riktig()" hidden> Riktig </button>
         <br>
-        <button id="forkastKnapp" class="knapp" onclick="forkast()" hidden> Forkast (-1 poeng) </button>
+        <button id="forkastKnapp" class="knapp" onclick="forkast()" hidden> Forkast </button>
         <p id="beskjed"></p>
         <p id="ferdigeOrd"></p>
 
@@ -108,6 +108,7 @@ html {
             let poengEl = document.getElementById("poeng");
             let ferdigeOrdEl = document.getElementById("ferdigeOrd");
             let intervall = null;
+            let tidUte = true;
 
             function startTur() {
                 nyttOrd()
@@ -118,28 +119,27 @@ html {
                 forkastKnappEl.removeAttribute("hidden");
                 startKnappEl.hidden = true;
 
+                tidUte = false;
+
                 klokke = 60;
                 klokkeEl.innerHTML = klokke + " sekunder";
 
                 intervall = setInterval(klokkeTeller, 1000);
-                setTimeout(avsluttTur, 1000 * 60);
 
             }
             
             function klokkeTeller() {
                 klokke--
                 klokkeEl.innerHTML = klokke + " sekunder";
-            }
 
-            function avsluttTur() {
+                if (klokke == 0) {
                 ordEl.innerHTML =  ordEl.innerHTML;
                 beskjedEl.innerHTML = "Turen din er ferdig, du kan fortsatt forklare ordet over";
                 poengEl.innerHTML = poeng + " poeng";
 
-                riktigKnappEl.hidden = true;
-                forkastKnappEl.hidden = true;
-                startKnappEl.hidden = false;
+                tidUte = true;
                 clearInterval(intervall);
+                }
 
             }
 
@@ -148,16 +148,32 @@ html {
             }
             function riktig() {
                 ferdigeOrd.innerHTML = ordEl.innerHTML + ' (r)<br>' + ferdigeOrd.innerHTML;
-                nyttOrd()
-                poeng++;
+
+                if (tidUte) {
+                    riktigKnappEl.hidden = true;
+                    forkastKnappEl.hidden = true;
+                    startKnappEl.hidden = false;
+                    beskjedEl.innerHTML = "";
+                } else {
+                    poeng++;
+                    nyttOrd();
+                }
                 poengEl.innerHTML = poeng + " poeng";
                             
             }
 
             function forkast() {
                 ferdigeOrd.innerHTML = ordEl.innerHTML + ' (g)<br>' + ferdigeOrd.innerHTML;
-                nyttOrd()
-                poeng--;
+
+                if (tidUte) {
+                    riktigKnappEl.hidden = true;
+                    forkastKnappEl.hidden = true;
+                    startKnappEl.hidden = false;
+                    beskjedEl.innerHTML = "";
+                } else if (poeng > 0) {
+                    poeng--;
+                    nyttOrd();
+                }
                 poengEl.innerHTML = poeng + " poeng";
 
             }
