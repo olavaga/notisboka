@@ -59,6 +59,14 @@ html {
     bottom:-2vmin;
 }
 
+#question {
+    position:fixed;
+    opacity: 0.6;
+    height: 10vmin;
+    left:1vmin;
+    top:1vmin;
+}
+
 #ferdigeOrd {
     color: aqua; 
 }
@@ -76,7 +84,52 @@ html {
     background-color: forestgreen;
 }
 
-#forkastKnapp { background-color: indianred;
+#forkastKnapp { 
+    background-color: indianred;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: brown;
+  color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-content p {
+  text-align:left;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
             
 
@@ -96,6 +149,22 @@ html {
 
         <img id="egg-1" class="egg" src="/easter-egg-1.svg" alt="Påskeegg">
         <img id="egg-2" class="egg" src="/easter-egg-2.svg" alt="Påskeegg">
+        <img id="question" src="/question.svg" alt="Spørsmålstegn" onclick="openModal()">
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Regler</h3>
+            <p>I Agalias er det om å gjøre å forklare flest mulig ord på ett minutt. </p>
+            <p>Laget ditt får ett poeng for hvert ord dere klarer å gjette riktig.</p>
+            
+            <p>Det er ikke lov til å bruke selve ordet eller deler av ordet. Dersom du skal forklare hagestol, har du ikke lov til å bruke ordene hage, stol og hagestol. Gjør du det, må du forkaste ordet.</p>
+            <p>Du kan for eksempel ta i bruk synonymer, antonymer, assosiasjoner eller lignende for å hjelpe lagkameratene dine med å finne ut hvilket ord det er.</p>
+            <p>Forkaster du ord, vil du få ett minuspoeng. Du kan når som helst forkaste et ord. Når tiden er ute, kan du fortsatt forklare ordet, og vil ikke få minuspoeng dersom du ikke skulle klare det. </p>
+            <p>Det er ikke lov å stave ordet eller hinte om hvilke bokstaver som inngår i ordet. Det er heller ikke lov til å mime, peke eller lignende.</p>
+          </div>
+        </div>
+
         <script type="text/javascript" src="norskeord.js"></script>
         <script>
             let poeng = 0;
@@ -178,6 +247,21 @@ html {
 
             }
 
+            var modal = document.getElementById("myModal");
+
+            function openModal() {
+              modal.style.display = "block";
+            }
+
+            function closeModal() {
+              modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
                 
         </script>
 
