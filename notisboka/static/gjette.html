@@ -170,10 +170,10 @@ html {
                     forkastKnappEl.hidden = true;
                     startKnappEl.hidden = false;
                     beskjedEl.innerHTML = "";
-                } else if (poeng > 0) {
-                    poeng--;
+                } else {
+                    if (poeng > 0) poeng--;
                     nyttOrd();
-                }
+                } 
                 poengEl.innerHTML = poeng + " poeng";
 
             }
