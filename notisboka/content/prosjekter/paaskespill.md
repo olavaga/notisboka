@@ -1,7 +1,6 @@
 ---
 title: "Påskespill"
-date: 2021-04-03T13:05:41+02:00
-slug: ""
+date: 2021-04-03
 description: "Digital påskeversjon av Alias"
 keywords: ["Alias", "Brettspill", "Gratis", "Digitalt", "Online"]
 draft: false
