@@ -68,7 +68,7 @@ html {
 }
 
 #ferdigeOrd {
-    color: aqua; 
+    color: black; 
 }
 
 .knapp:hover {
@@ -94,13 +94,13 @@ html {
   position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
+  padding-top: 5vh;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -119,15 +119,16 @@ html {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: white; 
   float: right;
   font-size: 28px;
+  font-size: 9vmin;
   font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
@@ -136,7 +137,7 @@ html {
 </style>
     </head>
     <body>
-        <p> Agalias </p>
+        <p> Alias </p>
         <p id="ord"></p>
         <p id="poeng">0 poeng</p>
         <p id="klokke"></p>
@@ -155,7 +156,7 @@ html {
           <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h3>Regler</h3>
-            <p>I Agalias er det om å gjøre å forklare flest mulig ord på ett minutt. </p>
+            <p>I Alias er det om å gjøre å forklare flest mulig ord på ett minutt. </p>
             <p>Laget ditt får ett poeng for hvert ord dere klarer å gjette riktig.</p>
             
             <p>Det er ikke lov til å bruke selve ordet eller deler av ordet. Dersom du skal forklare hagestol, har du ikke lov til å bruke ordene hage, stol og hagestol. Gjør du det, må du forkaste ordet.</p>
