@@ -1,0 +1,282 @@
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+html {
+    padding: 2rem;
+    font-family: helvetica;
+    background:azure;
+    text-align: center;
+    font-size: 12px;
+    font-size: 4vmin;
+}
+
+#hjem {
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    color:gray;
+    font-size: 9px;
+    font-size: 3vmin;
+}
+
+#ord {
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 30px;
+    font-size: 9vmin;
+}
+
+#klokke {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+}
+
+.knapp {
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 80vmin;
+    color: white;
+    margin: 0.5rem;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-size: 3vmin;
+}
+
+.egg {
+    opacity:0.9;
+    position:fixed;
+    right:0px;
+    height: 30vmin;
+    z-index:-1;
+}
+
+#egg-1 {
+    transform:rotate(-45deg);
+    right:-5vmin;
+    bottom:3vmin;
+}
+
+#egg-2 {
+    transform:rotate(15deg);
+    right:30vmin;
+    bottom:-2vmin;
+}
+
+#question {
+    position:fixed;
+    opacity: 0.6;
+    height: 10vmin;
+    left:1vmin;
+    top:1vmin;
+}
+
+#ferdigeOrd {
+    color: black; 
+}
+
+.knapp:hover {
+    filter: brightness(115%);
+
+}
+
+#startKnapp {
+    background-color: darkslateblue;
+}
+
+#riktigKnapp {
+    background-color: forestgreen;
+}
+
+#forkastKnapp { 
+    background-color: indianred;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  padding-top: 5vh;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: brown;
+  color: white;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-content p {
+  text-align:left;
+}
+
+/* The Close Button */
+.close {
+  color: white; 
+  float: right;
+  font-size: 28px;
+  font-size: 9vmin;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+            
+
+</style>
+    </head>
+    <body>
+        <p> Alias </p>
+        <p id="ord"></p>
+        <p id="poeng">0 poeng</p>
+        <p id="klokke"></p>
+        <button id="startKnapp" class="knapp" onclick="startTur()"> Start tur</button>
+        <button id="riktigKnapp" class="knapp" onclick="riktig()" hidden> Riktig </button>
+        <br>
+        <button id="forkastKnapp" class="knapp" onclick="forkast()" hidden> Forkast </button>
+        <p id="beskjed"></p>
+        <p id="ferdigeOrd"></p>
+
+        <img id="egg-1" class="egg" src="/easter-egg-1.svg" alt="Påskeegg">
+        <img id="egg-2" class="egg" src="/easter-egg-2.svg" alt="Påskeegg">
+        <img id="question" src="/question.svg" alt="Spørsmålstegn" onclick="openModal()">
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>Regler</h3>
+            <p>I Alias er det om å gjøre å forklare flest mulig ord på ett minutt. </p>
+            <p>Laget ditt får ett poeng for hvert ord dere klarer å gjette riktig.</p>
+            
+            <p>Det er ikke lov til å bruke selve ordet eller deler av ordet. Dersom du skal forklare hagestol, har du ikke lov til å bruke ordene hage, stol og hagestol. Gjør du det, må du forkaste ordet.</p>
+            <p>Du kan for eksempel ta i bruk synonymer, antonymer, assosiasjoner eller lignende for å hjelpe lagkameratene dine med å finne ut hvilket ord det er.</p>
+            <p>Forkaster du ord, vil du få ett minuspoeng. Du kan når som helst forkaste et ord. Når tiden er ute, kan du fortsatt forklare ordet, og vil ikke få minuspoeng dersom du ikke skulle klare det. </p>
+            <p>Det er ikke lov å stave ordet eller hinte om hvilke bokstaver som inngår i ordet. Det er heller ikke lov til å mime, peke eller lignende.</p>
+          </div>
+        </div>
+
+        <a id="hjem" href="/prosjekter/paaskespill"> Tilbake til olavaga.no </a>
+
+        <script type="text/javascript" src="norskeord.js"></script>
+        <script>
+            let poeng = 0;
+            let ordEl = document.getElementById("ord");
+            let beskjedEl = document.getElementById("beskjed");
+            let startKnappEl = document.getElementById("startKnapp");
+            let riktigKnappEl = document.getElementById("riktigKnapp");
+            let forkastKnappEl = document.getElementById("forkastKnapp");
+            let klokkeEl = document.getElementById("klokke");
+            let poengEl = document.getElementById("poeng");
+            let ferdigeOrdEl = document.getElementById("ferdigeOrd");
+            let intervall = null;
+            let tidUte = true;
+
+            function startTur() {
+                nyttOrd()
+                poengEl.innerHTML = poeng + " poeng";
+                beskjedEl.innerHTML = "";
+
+                riktigKnappEl.removeAttribute("hidden");
+                forkastKnappEl.removeAttribute("hidden");
+                startKnappEl.hidden = true;
+
+                tidUte = false;
+
+                klokke = 60;
+                klokkeEl.innerHTML = klokke + " sekunder";
+
+                intervall = setInterval(klokkeTeller, 1000);
+
+            }
+            
+            function klokkeTeller() {
+                klokke--
+                klokkeEl.innerHTML = klokke + " sekunder";
+
+                if (klokke == 0) {
+                ordEl.innerHTML =  ordEl.innerHTML;
+                beskjedEl.innerHTML = "Turen din er ferdig, du kan fortsatt forklare ordet over";
+                poengEl.innerHTML = poeng + " poeng";
+
+                tidUte = true;
+                clearInterval(intervall);
+                }
+
+            }
+
+            function nyttOrd() {
+                ordEl.innerHTML = mineOrd[Math.floor(Math.random() * mineOrd.length)];
+            }
+            function riktig() {
+                ferdigeOrd.innerHTML = ordEl.innerHTML + ' (r)<br>' + ferdigeOrd.innerHTML;
+
+                if (tidUte) {
+                    riktigKnappEl.hidden = true;
+                    forkastKnappEl.hidden = true;
+                    startKnappEl.hidden = false;
+                    beskjedEl.innerHTML = "";
+                } else {
+                    poeng++;
+                    nyttOrd();
+                }
+                poengEl.innerHTML = poeng + " poeng";
+                            
+            }
+
+            function forkast() {
+                ferdigeOrd.innerHTML = ordEl.innerHTML + ' (g)<br>' + ferdigeOrd.innerHTML;
+
+                if (tidUte) {
+                    riktigKnappEl.hidden = true;
+                    forkastKnappEl.hidden = true;
+                    startKnappEl.hidden = false;
+                    beskjedEl.innerHTML = "";
+                } else {
+                    if (poeng > 0) poeng--;
+                    nyttOrd();
+                } 
+                poengEl.innerHTML = poeng + " poeng";
+
+            }
+
+            var modal = document.getElementById("myModal");
+
+            function openModal() {
+              modal.style.display = "block";
+            }
+
+            function closeModal() {
+              modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+                
+        </script>
+
+    </body>
+
+</html>
