@@ -54,18 +54,3 @@ relativeURLS = true
   name = "prosjekter"
   title = "prosjekter"
   url = "/prosjekter/"
-
-[[menu.main]]
-  identifier = "alias"
-  name = "alias"
-  title = "Alias"
-  url = "/alias"
-
-#[[menu.main]]
-#  identifier = "ressurser"
-#  name = "ressurser"
-#  title = "ressurser"
-#  url = "/ressurser/"
-
-
-
