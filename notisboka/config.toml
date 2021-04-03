@@ -68,13 +68,13 @@ publishDir = "../docs"
   identifier = "notater"
   name = "notater"
   title = "notater"
-  url = "/notater"
+  url = "/notater/"
 
 [[menu.main]]
   identifier = "prosjekter"
   name = "prosjekter"
   title = "prosjekter"
-  url = "/prosjekter"
+  url = "/prosjekter/"
 
 [[menu.main]]
   identifier = "alias"
@@ -86,7 +86,7 @@ publishDir = "../docs"
 #  identifier = "ressurser"
 #  name = "ressurser"
 #  title = "ressurser"
-#  url = "/ressurser"
+#  url = "/ressurser/"
 
 
 
