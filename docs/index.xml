@@ -19,6 +19,16 @@ Du finner resultatet her. 🎉 🎉 Siden holder styr på tid, trekker ord for d
     </item>
     
     <item>
+      <title>Little Man Computer</title>
+      <link>https://www.olavaga.no/prosjekter/little-man-computer/</link>
+      <pubDate>Mon, 26 Oct 2020 20:17:16 +0200</pubDate>
+      
+      <guid>https://www.olavaga.no/prosjekter/little-man-computer/</guid>
+      <description>LMC.py 💻  Jeg bygde dette programmet for å forenkle rettingen i et fag jeg underviser på Universitetet i Oslo. I emnet lærer studentene blant annet å programmere i en simulator kalt Little Man Computer, som visualiserer hvordan prosessoren i en maskin fungerer.
+Vanlig arbeidsflyt for å rette en oppgave ville vært å åpne nettsiden, laste opp tekstfilen med koden til studenten, trykke kjør og fylle inn testdata. Deretter observere om programmet kjører som det skal.</description>
+    </item>
+    
+    <item>
       <title>Åpen læring</title>
       <link>https://www.olavaga.no/notater/aapenlaering/</link>
       <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>undervisning on Notisboka.</title>
+    <link>https://www.olavaga.no/tags/undervisning/</link>
+    <description>Recent content in undervisning on Notisboka.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>no-no</language>
+    <copyright>© {2020}</copyright>
+    <lastBuildDate>Mon, 26 Oct 2020 20:17:16 +0200</lastBuildDate><atom:link href="https://www.olavaga.no/tags/undervisning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Little Man Computer</title>
+      <link>https://www.olavaga.no/prosjekter/little-man-computer/</link>
+      <pubDate>Mon, 26 Oct 2020 20:17:16 +0200</pubDate>
+      
+      <guid>https://www.olavaga.no/prosjekter/little-man-computer/</guid>
+      <description>LMC.py 💻  Jeg bygde dette programmet for å forenkle rettingen i et fag jeg underviser på Universitetet i Oslo. I emnet lærer studentene blant annet å programmere i en simulator kalt Little Man Computer, som visualiserer hvordan prosessoren i en maskin fungerer.
+Vanlig arbeidsflyt for å rette en oppgave ville vært å åpne nettsiden, laste opp tekstfilen med koden til studenten, trykke kjør og fylle inn testdata. Deretter observere om programmet kjører som det skal.</description>
+    </item>
+    
+  </channel>
+</rss>
