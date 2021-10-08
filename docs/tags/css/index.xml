@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>no-no</language>
     <copyright>© {2020}</copyright>
-    <lastBuildDate>Sat, 03 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.olavaga.no/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Aug 2021 20:17:30 +0200</lastBuildDate><atom:link href="https://www.olavaga.no/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Webhjelp til Boligoppropet</title>
+      <link>https://www.olavaga.no/prosjekter/boligoppropet/</link>
+      <pubDate>Sun, 22 Aug 2021 20:17:30 +0200</pubDate>
+      
+      <guid>https://www.olavaga.no/prosjekter/boligoppropet/</guid>
+      <description>Prosjektet Spire tok etter Globaliseringskonferansen initiativ til en allianse for ny boligpolitikk. En rekke progressive organisasjoner bidro inn i prosessen om å lage en felles plattform. For å spre kravene trengte de en nettside, som jeg lagde på frivillig basis. Sluttresultatet finner du her. 🏆 Statiske nettsider Vanligvis er nettsider en ganske vrien og dyr greie. Statiske nettsider er internett på gamlemåten, enkle statiske dokumenter bestående av html. Skal du lage en nettside uten brukerlogin, kommentarfelt eller annet dynamisk innhold, er dette en grei løsning.</description>
+    </item>
+    
     <item>
       <title>Påskespill</title>
       <link>https://www.olavaga.no/prosjekter/paaskespill/</link>

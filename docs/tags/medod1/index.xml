@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Notaters on Notisboka.</title>
-    <link>https://www.olavaga.no/notater/</link>
-    <description>Recent content in Notaters on Notisboka.</description>
+    <title>medod1 on Notisboka.</title>
+    <link>https://www.olavaga.no/tags/medod1/</link>
+    <description>Recent content in medod1 on Notisboka.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>no-no</language>
     <copyright>© {2020}</copyright>
-    <lastBuildDate>Fri, 08 Oct 2021 10:49:16 +0200</lastBuildDate><atom:link href="https://www.olavaga.no/notater/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Oct 2021 10:49:16 +0200</lastBuildDate><atom:link href="https://www.olavaga.no/tags/medod1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VSEPR</title>
       <link>https://www.olavaga.no/notater/vsepr/</link>
@@ -36,16 +36,6 @@ Et mye brukt eksempel er karbonatomet. Karbon har 1 S-orbital og 3 P-orbitaler.<
       <guid>https://www.olavaga.no/notater/orbitaler/</guid>
       <description>Skall Fra kjemien kjenner vi at elektronene rundt et atom befinner seg i ulike skall rundt kjernen. For eksempel har karbon et skall innerst med 2 elektroner, og et skall ytterst med plass til 8, hvorav 4 er der fra før. Dette er en nyttig modell, som forteller oss mye om hvordan ulike atomer kan danne kovalente bindinger gjennom å dele elektroner med andre.
 Orbitaler Fra kvantefysikken har vi fått en mer nyansert forståelse av hvordan elektronene forholder seg til kjernen gjennom orbitaler.</description>
-    </item>
-    
-    <item>
-      <title>Åpen læring</title>
-      <link>https://www.olavaga.no/notater/aapenlaering/</link>
-      <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.olavaga.no/notater/aapenlaering/</guid>
-      <description>Hjemmekontorets underfundigheter Torsdag startet som mange andre dager. Frokost på kjøkkenet, etterfulgt av digital forelesning på kjøkkenet og deretter videre studier på kjøkkenet. 😷 Misforstå meg rett. Jeg liker kjøkkenet mitt. Og er heldig som har et studie å gå til. Problemet er at for å lære, hele poenget med studiene, trenger jeg å anvende det jeg lærer.
-Vanligvis ville det skjedd på én av to måter: 🏫  Jeg skriver kode som løser et problem foreleseren har gitt oss Jeg diskuterer kode med andre medstudenter  Problemet med kjøkkenet, er at det mangler medstudenter.</description>
     </item>
     
   </channel>

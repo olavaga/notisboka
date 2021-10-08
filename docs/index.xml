@@ -7,7 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>no-no</language>
     <copyright>© {2020}</copyright>
-    <lastBuildDate>Sat, 03 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.olavaga.no/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Oct 2021 10:49:16 +0200</lastBuildDate><atom:link href="https://www.olavaga.no/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSEPR</title>
+      <link>https://www.olavaga.no/notater/vsepr/</link>
+      <pubDate>Fri, 08 Oct 2021 10:49:16 +0200</pubDate>
+      
+      <guid>https://www.olavaga.no/notater/vsepr/</guid>
+      <description>Geometri i kjemiske forbindelser Elektronene i et atoms ytterste skall, ofte kalt valenselektroner, vil forsøke å være nært kjernen og samtidig fjernt fra hverandre. Dette gir grunnlag for Valence Shell Electron Pair Repulsion (VSEPR), som er en modell som enklere lar oss forstå geometrien i ulike molekyler.
+Et eksempel på dette er vann. Siden oksygenatomet har to frie elektronpar, vil disse, sammen med hydrogenatomene, forsøke å maksimere sin innbyrdes avstand. Dermed får vi en tetraeder.</description>
+    </item>
+    
+    <item>
+      <title>Hybridisering</title>
+      <link>https://www.olavaga.no/notater/hybridisering/</link>
+      <pubDate>Thu, 07 Oct 2021 13:04:04 +0200</pubDate>
+      
+      <guid>https://www.olavaga.no/notater/hybridisering/</guid>
+      <description>Hybridorbitaler Orbitaler forklarer hvordan elektronene beveger seg rundt atomkjernen, og er et uttrykk for elektronenes sannsynlige plassering. De ulike orbitalene kan også smelte sammen og danne hybridorbitaler med ulik form. Disse nye orbitalene kommer av at flere elektroner vil påvirke hverandres relative plassering. Hybridisering forklarer også strukturen i en kovalent binding. Dette er svært nyttig for å forstå geometrien til ulike molekyler.
+Et mye brukt eksempel er karbonatomet. Karbon har 1 S-orbital og 3 P-orbitaler.</description>
+    </item>
+    
+    <item>
+      <title>Orbitaler</title>
+      <link>https://www.olavaga.no/notater/orbitaler/</link>
+      <pubDate>Thu, 07 Oct 2021 12:58:38 +0200</pubDate>
+      
+      <guid>https://www.olavaga.no/notater/orbitaler/</guid>
+      <description>Skall Fra kjemien kjenner vi at elektronene rundt et atom befinner seg i ulike skall rundt kjernen. For eksempel har karbon et skall innerst med 2 elektroner, og et skall ytterst med plass til 8, hvorav 4 er der fra før. Dette er en nyttig modell, som forteller oss mye om hvordan ulike atomer kan danne kovalente bindinger gjennom å dele elektroner med andre.
+Orbitaler Fra kvantefysikken har vi fått en mer nyansert forståelse av hvordan elektronene forholder seg til kjernen gjennom orbitaler.</description>
+    </item>
+    
+    <item>
+      <title>Webhjelp til Boligoppropet</title>
+      <link>https://www.olavaga.no/prosjekter/boligoppropet/</link>
+      <pubDate>Sun, 22 Aug 2021 20:17:30 +0200</pubDate>
+      
+      <guid>https://www.olavaga.no/prosjekter/boligoppropet/</guid>
+      <description>Prosjektet Spire tok etter Globaliseringskonferansen initiativ til en allianse for ny boligpolitikk. En rekke progressive organisasjoner bidro inn i prosessen om å lage en felles plattform. For å spre kravene trengte de en nettside, som jeg lagde på frivillig basis. Sluttresultatet finner du her. 🏆 Statiske nettsider Vanligvis er nettsider en ganske vrien og dyr greie. Statiske nettsider er internett på gamlemåten, enkle statiske dokumenter bestående av html. Skal du lage en nettside uten brukerlogin, kommentarfelt eller annet dynamisk innhold, er dette en grei løsning.</description>
+    </item>
+    
     <item>
       <title>Påskespill</title>
       <link>https://www.olavaga.no/prosjekter/paaskespill/</link>
