@@ -16,7 +16,7 @@ Jeg bygde dette programmet for å forenkle rettingen i et fag jeg underviser på
 
 Vanlig arbeidsflyt for å rette en oppgave ville vært å åpne nettsiden, laste opp tekstfilen med koden til studenten, trykke kjør og fylle inn testdata. Deretter observere om programmet kjører som det skal.
 
-Dette blir fort ganske arbeidskrevende. Kommandolinjeverktøyet lot meg automatisere både kjøring og testing koden til studenten. Det var også en spennende øvelse i å skrive en enkel tolker for et lite programmeringsspråk med for instruksjoner. 
+Dette blir fort ganske arbeidskrevende. Kommandolinjeverktøyet lot meg automatisere både kjøring og testing koden til studenten. Det var også en spennende øvelse i å skrive en enkel tolker for et lite programmeringsspråk med få instruksjoner. 
 
 [Selve prosjektet finner du her](https://github.com/olavaga/lmc). {{<emoji ":rocket:">}} 
 
