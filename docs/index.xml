@@ -77,5 +77,36 @@ Vanlig arbeidsflyt for å rette en oppgave ville vært å åpne nettsiden, laste
 Vanligvis ville det skjedd på én av to måter: 🏫  Jeg skriver kode som løser et problem foreleseren har gitt oss Jeg diskuterer kode med andre medstudenter  Problemet med kjøkkenet, er at det mangler medstudenter.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://www.olavaga.no/notater/abcde/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.olavaga.no/notater/abcde/</guid>
+      <description>Huskeregel for førstehjelp ABCDE-metoden er en enkel måte å huske sentrale punkter i livreddende førstehjelp. Her går jeg kort gjennom de ulike stegene. Det finnes også en rekke andre huskeregler som MARSHALL og Blås, disse er varianter av de samme stegene med små variasjoner.
+Airways Første punkt er å sikre luftveiene. Man starter med å søke kontakt, og vurderer deretter om luftveien ser fri ut. Et viktig moment her er kjevegrepet, hvor man løfter haken fram og opp etter kjevevinklene.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.olavaga.no/notater/mulige-prosjekter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.olavaga.no/notater/mulige-prosjekter/</guid>
+      <description>Ideer til post-eksamensprosjekter I eksamensprokrastrineringen får jeg fort lyst til å gjøre andre ting. Så her er en liste slik at jeg kan komme tilbake til det senere:
+ Lage webapp for å lære medisinsk nomenklatur Laste ned alle mine løsninger i Clash of Code og lage statistikk / kjøre statisk analyse Finne ut hva mastodon er Lage webapp for digitalt kølappsystem Lage leaderboard for Advent of Code med kortest tid mellom første og andre stjerne, samt flest stjerner på én dag  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.olavaga.no/notater/sirkulasjonssvikt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.olavaga.no/notater/sirkulasjonssvikt/</guid>
+      <description>Sirkulasjonssvikt Sirkulasjonssvikt er når blodet ikke lenge når fram til vitale organer. Det finnes i hovedsak tre typer sirkulasjonssvikt: (1) hypovolemt sjokk, (2) kardiogent eller obstruktivt sjokk, og (3) disruptivt sjokk.
+Blodtap Hypovolemt sjokk er når man mister så mye blod at det ikke lengre er tilstrekkelig til å oksygenere kroppens organer.
+Hjertestans og blodpropp Kardiogent og obstruktivt sjokk er når motstanden blir så stor at blodet ikke kan sirkulere.</description>
+    </item>
+    
   </channel>
 </rss>
